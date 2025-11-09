@@ -4,7 +4,7 @@ import { useState, useEffect, use } from "react";
 
 export default function Hero() {
   const [ text, subText] = useState("");
-  const fulltext = "MARS STUDIO";
+  const fulltext = "M ARS STUDIO";
 
   useEffect(() => {
     let index = 0;
