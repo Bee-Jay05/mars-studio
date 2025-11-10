@@ -29,13 +29,6 @@ export default function MissionDataSection() {
           transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
         />
 
-        {/* faint red glow */}
-        <motion.div
-          className="absolute -top-20 -left-20 w-96 h-96 bg-[#c1440e]/20 blur-[160px] rounded-full"
-          animate={{ x: [0, 50, -50, 0], y: [0, 30, -30, 0] }}
-          transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
-        />
-
         <motion.h2
           className="font-orbitron text-3xl md:text-5xl tracking-widest mb-12 z-10"
           initial={{ opacity: 0, y: 20 }}
