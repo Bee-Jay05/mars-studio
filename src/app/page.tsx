@@ -3,6 +3,7 @@ import Mission from "@/components/Mission";
 import MissionData from "@/components/MissionData";
 import Projects from "@/components/Projects";
 import Quote from "@/components/Quote";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <MissionData />
       <Projects />
       <Quote />
+      <Services />
     </main>
   );
 }
