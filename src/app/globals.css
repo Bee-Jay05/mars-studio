@@ -60,8 +60,8 @@ a {
 
 /* Pulse glow for divider lines */
 @keyframes pulseGlow {
-  0%, 100% { opacity: 0.1; }
-  50% { opacity: 0.5; }
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
 }
 .animate-pulse {
   animation: pulseGlow 6s infinite;

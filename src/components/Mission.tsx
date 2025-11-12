@@ -23,14 +23,14 @@ export default function Mission() {
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 1 }}
+          transition={{ delay: 0.2, duration: 1 }}
           className="text-4xl md:text-6xl font-bold mb-6 font-orbitron tracking-widest">
           MARS STUDIO <span className="text-[#c1440e]">2055</span>
         </motion.h2>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 1 }}
+          transition={{ delay: 0.2, duration: 1 }}
           className="flex justify-between max-w-lg my-10 mx-auto"
         >
           <div className="w-3 h-3 bg-[#c1440e] mt-3 rounded-full" />
@@ -40,7 +40,7 @@ export default function Mission() {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 1 }}
+          transition={{ delay: 0.2, duration: 1 }}
         >
           <p className="text-lg md:text-xl leading-relaxed mt-6">
           At Mars Studio, we design beyond boundaries. Our work fuses minimalism, motion, and imagination to craft interfaces that feel like technology from another world. Every pixel is placed with intent — built to move, to glow, and to guide users through seamless digital atmospheres.

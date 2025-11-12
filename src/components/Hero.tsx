@@ -22,7 +22,7 @@ export default function Hero() {
     <section className="relative h-screen w-full overflow-hidden bg-black text-white font-spaceGrotesk">
 
       {/* Background image */}
-      <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{backgroundImage: "url('/file_00000000e65071f59dbc74cb2571d1e7.png')"}} />
+      <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{backgroundImage: "linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 1) 100%), url('/file_00000000e65071f59dbc74cb2571d1e7.png')"}} />
 
       {/* Divider lines */}
       <div className="absolute inset-0 pointer-events-none flex justify-between">
