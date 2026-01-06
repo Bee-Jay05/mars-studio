@@ -25,7 +25,7 @@ export default function Mission() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 1 }}
           className="text-4xl md:text-6xl font-bold mb-6 font-orbitron tracking-widest">
-          MARS STUDIO <span className="text-[#c1440e]">2055</span>
+          MARS STUDIO <span className="text-[#FF1E1E]">2055</span>
         </motion.h2>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -33,9 +33,9 @@ export default function Mission() {
           transition={{ delay: 0.2, duration: 1 }}
           className="flex justify-between max-w-lg my-10 mx-auto"
         >
-          <div className="w-3 h-3 bg-[#c1440e] mt-3 rounded-full" />
-          <div className="w-3 h-3 bg-[#c1440e] mt-3 rounded-full" />
-          <div className="w-3 h-3 bg-[#c1440e] mt-3 rounded-full" />
+          <div className="w-3 h-3 bg-[#FF1E1E] mt-3 rounded-full" />
+          <div className="w-3 h-3 bg-[#FF1E1E] mt-3 rounded-full" />
+          <div className="w-3 h-3 bg-[#FF1E1E] mt-3 rounded-full" />
         </motion.div>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

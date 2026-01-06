@@ -47,12 +47,12 @@ export default function Quote() {
           viewport={{ once: true }}
           className="max-w-4xl"
         >
-          <QuoteIcon className="mx-auto mb-8 text-blue-400 w-10 h-10" />
+          <QuoteIcon className="mx-auto mb-8 text-[#C1440E] w-10 h-10" />
           <h1 className="text-4xl md:text-5xl italic leading-tight text-white/90">
             Great design is the silence between notes — where clarity meets emotion, and simplicity becomes power.
           </h1>
           <motion.div
-            className="h-[1px] w-1/3 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mt-10"
+            className="h-[1px] w-1/3 bg-gradient-to-r from-transparent via-[#FF4C29] to-transparent mx-auto mt-10"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             transition={{ duration: 1.2 }}

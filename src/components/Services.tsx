@@ -33,7 +33,7 @@ export default function Services() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,0,0,0.1)_0%,transparent_70%, rgba(0,0,0,1) 100%)] pointer-events-none" />
       <div className="absolute inset-0 grid grid-cols-12 opacity-10 pointer-events-none">
         {[...Array(12)].map((_, i) => (
-          <div key={i} className="border border-red-500/20" />
+          <div key={i} className="border border-[#C1440E]/20" />
         ))}
       </div>
 
@@ -76,16 +76,16 @@ export default function Services() {
               {/* Neon holographic frame with corner brackets */}
               <div className="absolute inset-0 pointer-events-none">
                 {/* Outer neon glow */}
-                <div className="absolute inset-0 border border-red-500/50 rounded-2xl shadow-[0_0_40px_rgba(255,0,0,0.3)] animate-pulse" />
+                <div className="absolute inset-0 border border-[#C1440E]/50 rounded-2xl shadow-[0_0_40px_rgba(255,0,0,0.3)] animate-pulse" />
 
                 {/* Inner animated grid */}
                 <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_95%,rgba(255,0,0,0.08)_100%),linear-gradient(to_right,transparent_95%,rgba(255,0,0,0.08)_100%)] bg-[length:20px_20px] opacity-30 animate-[pulse_2s_ease-in-out_infinite] rounded-2xl" />
 
                 {/* Corner brackets */}
-                <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-red-500 rounded-tl-lg animate-pulse" />
-                <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-red-500 rounded-tr-lg animate-pulse" />
-                <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-red-500 rounded-bl-lg animate-pulse" />
-                <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-red-500 rounded-br-lg animate-pulse" />
+                <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-[#C1440E] rounded-tl-lg animate-pulse" />
+                <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-[#C1440E] rounded-tr-lg animate-pulse" />
+                <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-[#C1440E] rounded-bl-lg animate-pulse" />
+                <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-[#C1440E] rounded-br-lg animate-pulse" />
               </div>
 
               {/* Gradient overlay for cinematic depth */}
@@ -94,7 +94,7 @@ export default function Services() {
 
             {/* Text overlay */}
             <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
-              <h3 className="text-xl font-orbitron text-red-400 tracking-wide drop-shadow-[0_0_10px_rgba(255,0,0,0.7)]">
+              <h3 className="text-xl font-orbitron text-[#FF1E1E] tracking-wide drop-shadow-[0_0_10px_rgba(255,0,0,0.7)]">
                 {service.title}
               </h3>
               <p className="text-gray-300 font-spaceGrotesk mt-2 text-sm">{service.description}</p>
@@ -105,7 +105,7 @@ export default function Services() {
               {[...Array(5)].map((_, i) => (
                 <motion.div
                   key={i}
-                  className="absolute bg-red-500/40 rounded-full w-1 h-1"
+                  className="absolute bg-[#C1440E]/40 rounded-full w-1 h-1"
                   animate={{
                     x: [0, Math.random() * 10 - 5, 0],
                     y: [0, Math.random() * 10 - 5, 0],

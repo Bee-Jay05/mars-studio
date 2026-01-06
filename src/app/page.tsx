@@ -5,10 +5,14 @@ import Projects from "@/components/Projects";
 import Quote from "@/components/Quote";
 import Services from "@/components/Services";
 import Crew from "@/components/Crew";
+import Capabilities from "@/components/Capabilities";
+import Commlink from "@/components/Commlink";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <main>
+      <Commlink />
       <Hero />
       <Mission />
       <MissionData />
@@ -16,6 +20,8 @@ export default function Home() {
       <Quote />
       <Services />
       <Crew />
+      <Capabilities />
+      <Footer />
     </main>
   );
 }

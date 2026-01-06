@@ -48,13 +48,13 @@ export default function MissionDataSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2, duration: 0.6 }}
             >
-              <h3 className="font-orbitron text-sm text-[#c1440e] tracking-[0.25em] mb-2">
+              <h3 className="font-orbitron text-sm text-[#FF1E1E] tracking-[0.25em] mb-2">
                 {stat.label}
               </h3>
               {/* Visual placeholder animations */}
               {stat.type === 'circular' && (
                 <motion.div
-                  className="w-20 h-20 flex items-center justify-center text-lg font-spaceGrotesk border-2 border-[#c1440e] rounded-full"
+                  className="w-20 h-20 flex items-center justify-center text-lg font-spaceGrotesk border-2 border-[#C1440E] rounded-full"
                   animate={{ rotate: [0, 360] }}
                   transition={{ duration: 6, repeat: Infinity, ease: 'linear' }}
                 >
@@ -64,7 +64,7 @@ export default function MissionDataSection() {
               {stat.type === 'bar' && (
                 <div className="w-full h-4 bg-white/10 rounded-full mt-2 overflow-hidden">
                   <motion.div
-                    className="h-full bg-[#c1440e]/30 rounded-full"
+                    className="h-full bg-[#C1440E]/30 rounded-full"
                     initial={{ width: '0%' }}
                     animate={{ width: `${stat.value}%` }}
                     transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse' }}
@@ -73,7 +73,7 @@ export default function MissionDataSection() {
               )}
               {stat.type === 'ring' && (
                 <motion.div
-                  className="w-16 h-16 border-2 border-[#c1440e] rounded-full flex items-center justify-center text-white/80"
+                  className="w-16 h-16 border-2 border-[#C1440E] rounded-full flex items-center justify-center text-white/80"
                   animate={{ scale: [0.95, 1.05, 0.95] }}
                   transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
                 >
@@ -82,7 +82,7 @@ export default function MissionDataSection() {
               )}
               {stat.type === 'indicator' && (
                 <motion.div
-                  className="w-6 h-6 bg-[#c1440e] rounded-full mt-2"
+                  className="w-6 h-6 bg-[#C1440E] rounded-full mt-2"
                   animate={{ opacity: [0.3, 1, 0.3] }}
                   transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
                 />
@@ -144,7 +144,7 @@ export default function MissionDataSection() {
 
         {/* moving highlight scan */}
         <motion.div
-          className="absolute inset-0 bg-gradient-to-b from-transparent via-[#c1440e]/5 to-transparent"
+          className="absolute inset-0 bg-gradient-to-b from-transparent via-[#B33A3A]/5 to-transparent"
           animate={{ y: ['100%', '-100%'] }}
           transition={{ duration: 6, repeat: Infinity, ease: 'linear' }}
         />

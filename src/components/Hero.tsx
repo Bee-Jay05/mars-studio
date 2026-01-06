@@ -46,7 +46,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="text-md tracking-widest text-[#c1440e] font-orbitron uppercase"
+              className="text-md tracking-widest text-[#FF1E1E] font-orbitron uppercase"
             >
               {text}
               <span className="animate-blink">_</span>
@@ -76,11 +76,11 @@ export default function Hero() {
               className="flex gap-4"
             >
               <motion.button 
-                whileHover={{scale: 1.05, boxShadow: "0 0 15px #ffffff44"}}
+                whileHover={{scale: 1.05, boxShadow: "0 0 15px #F1F1F144"}}
                 className="border border-white/30 px-6 py-2 rounded-lg text-sm tracking-wide hover:bg-white/10 transition">View Projects</motion.button>
               <motion.button 
-                whileHover={{scale: 1.05, boxShadow: "0 0 15px #c1440e44"}}
-                className="border border-[#c1440e] px-6 py-2 rounded-lg text-sm tracking-wide hover:bg-[#c1440e]/20 text-[#c1440e] transition">Transition Log</motion.button>
+                whileHover={{scale: 1.05, boxShadow: "0 0 15px #C1440E44"}}
+                className="border border-[#C1440E] px-6 py-2 rounded-lg text-sm tracking-wide hover:bg-[#C1440E]/20 text-[#FF1E1E] transition">Transition Log</motion.button>
             </motion.div>
           </div>
         </div>

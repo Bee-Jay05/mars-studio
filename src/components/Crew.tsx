@@ -22,7 +22,10 @@ export default function CrewSection() {
 
   return (
     <section className="relative w-full py-24 bg-black text-white font-spaceGrotesk overflow-hidden">
-      <h2 className="text-5xl font-orbitron text-center mb-12 tracking-wider text-red-400">THE CREW</h2>
+
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,0,0,0.15)_0%,transparent_70%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:100%_42px]" />
+      <h2 className="text-5xl font-orbitron text-center mb-12 tracking-wider text-white">THE CREW</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto px-8">
         {crew.map((member, idx) => (
@@ -33,7 +36,7 @@ export default function CrewSection() {
             transition={{ duration: 0.4 }}
             className="relative cursor-pointer overflow-hidden rounded-xl group"
           >
-            <div className="absolute inset-0 border border-red-500/40 rounded-2xl shadow-[0_0_30px_rgba(255,0,0,0.25)] animate-pulse pointer-events-none" />
+            <div className="absolute inset-0 border border-[#C1440E]/40 rounded-2xl shadow-[0_0_30px_rgba(255,0,0,0.25)] animate-pulse pointer-events-none" />
             <Image
               src={member.image}
               alt={member.name}
@@ -42,7 +45,7 @@ export default function CrewSection() {
               className="object-cover w-full h-80 rounded-2xl group-hover:scale-110 transition-transform duration-700"
             />
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5 z-12">
-              <h3 className="text-xl font-orbitron text-red-400">{member.name}</h3>
+              <h3 className="text-xl font-orbitron text-[#FF1E1E]">{member.name}</h3>
               <p className="text-gray-300 text-sm">{member.role}</p>
             </div>
 
@@ -52,10 +55,10 @@ export default function CrewSection() {
             />
 
             {/* Neon corner brackets */}
-              <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#c1440e]/70 rounded-tl-lg"></div>
-              <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-[#c1440e]/70 rounded-tr-lg"></div>
-              <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#c1440e]/70 rounded-bl-lg"></div>
-              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#c1440e]/70 rounded-br-lg"></div>
+              <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#C1440E]/70 rounded-tl-lg"></div>
+              <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-[#C1440E]/70 rounded-tr-lg"></div>
+              <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#C1440E]/70 rounded-bl-lg"></div>
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#C1440E]/70 rounded-br-lg"></div>
           </motion.div>
         ))}
       </div>
@@ -68,32 +71,33 @@ export default function CrewSection() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-
+            
             <motion.div
-              className="relative max-w-3xl w-full bg-gradient-to-b from-black/80 to-[#451804]/20 border border-[#c1440e]/30 rounded-2xl p-12 grid grid-cols-1 md:grid-cols-2 gap-6 shadow-[0_0_60px_rgba(255,0,0,0.1)] overflow-hidden"
+              className="relative max-w-3xl w-full bg-gradient-to-b from-black/80 to-[#B33A3A]/20 border border-[#C1440E]/30 rounded-2xl p-12 grid grid-cols-1 md:grid-cols-2 gap-6 shadow-[0_0_60px_rgba(255,0,0,0.2)] overflow-hidden before:absolute before:inset-0 before:rounded-2xl before:border before:border-[#C1440E]/20 before:blur-[1px] before:animate-pulse"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
+              
               {/* Holographic grid background */}
               <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,0,0,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px] opacity-10 animate-pulse" />
 
               {/* Neon corner brackets */}
-              <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[#c1440e]/70 rounded-tl-lg"></div>
-              <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-[#c1440e]/70 rounded-tr-lg"></div>
-              <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-[#c1440e]/70 rounded-bl-lg"></div>
-              <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-[#c1440e]/70 rounded-br-lg"></div>
+              <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[#C1440E]/70 rounded-tl-lg"></div>
+              <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-[#C1440E]/70 rounded-tr-lg"></div>
+              <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-[#C1440E]/70 rounded-bl-lg"></div>
+              <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-[#C1440E]/70 rounded-br-lg"></div>
 
               {/* Exit button */}  
               <motion.div
-                className="absolute inset-0 border border-red-500/30 rounded-3xl pointer-events-none"
+                className="absolute inset-0 border border-[#C1440E]/30 rounded-3xl pointer-events-none"
                 animate={{ opacity: [0.2, 0.5, 0.2] }}
                 transition={{ duration: 2, repeat: Infinity }}
               />
               <button
                 onClick={() => setSelected(null)}
-                className="absolute top-5 right-5 text-red-400 hover:text-white transition"
+                className="absolute top-5 right-5 text-[#FF1E1E] hover:text-white transition"
               >
                 <X size={28} />
               </button>
@@ -103,7 +107,7 @@ export default function CrewSection() {
                 className="flex flex-col items-center relative"
               >
                 <motion.div
-                  className="relative rounded-lg border border-red-500/50 shadow-[0_0_50px_rgba(255,0,0,0.4)] overflow-hidden"
+                  className="relative rounded-lg border border-[#C1440E]/50 shadow-[0_0_50px_rgba(255,0,0,0.4)] overflow-hidden"
                   animate={{
                     boxShadow: [
                       "0 0 20px rgba(255,0,0,0.1)",
@@ -124,24 +128,24 @@ export default function CrewSection() {
                 </motion.div>
 
                 <div className="mt-6 space-y-1 w-full">
-                  <h3 className="text-xl font-orbitron text-red-400 tracking-wider">{selected.name}</h3>
+                  <h3 className="text-xl font-orbitron text-[#FF1E1E] tracking-wider">{selected.name}</h3>
                   <p className="text-gray-400 text-sm uppercase">{selected.role}</p>
                 </div>
 
                 <div className="w-full gap-y-3 grid mt-6 text-sm text-gray-300 uppercase">
-                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-red-400">DOB</span> <span className="col-span-2">12 Aug 2091</span></p>
-                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-red-400">Hometown</span> <span className="col-span-2">Neo-Tokyo</span> </p>
-                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-red-400">Status</span> <span className="col-span-2">Active</span> </p>
-                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-red-400">Position</span> <span className="col-span-2">{selected.role}</span> </p>
-                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-red-400">Email</span> <span className="col-span-2 lowercase">{selected.name.toLowerCase().replace(/\s/g, ".")}@mars.studio</span> </p>
-                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="absolute h-[1px] w-full bg-gray-500 -bottom-2 opacity-30"></span><span className="text-red-400">Comm</span> <span className="col-span-2">+00 943-883-2211</span> </p>
+                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-[#FF1E1E]">DOB</span> <span className="col-span-2">12 Aug 2091</span></p>
+                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-[#FF1E1E]">Hometown</span> <span className="col-span-2">Neo-Tokyo</span> </p>
+                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-[#FF1E1E]">Status</span> <span className="col-span-2">Active</span> </p>
+                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-[#FF1E1E]">Position</span> <span className="col-span-2">{selected.role}</span> </p>
+                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="text-[#FF1E1E]">Email</span> <span className="col-span-2 lowercase">{selected.name.toLowerCase().replace(/\s/g, ".")}@mars.studio</span> </p>
+                  <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="absolute h-[1px] w-full bg-gray-500 -bottom-2 opacity-30"></span><span className="text-[#FF1E1E]">Comm</span> <span className="col-span-2">+00 943-883-2211</span> </p>
                 </div>
               </div>
 
               {/* Right: Skills & Stats */}
               <div className="relative before:absolute before:content-[''] before:h-full before:w-[1px] before:bg-gray-500 before:opacity-30 before:left-0 before:top-0 pl-6">
                 <div className="absolute inset-0 pointer-events-none" />
-                <h4 className="text-xl font-orbitron text-red-400 mb-3">Skill Matrix</h4>
+                <h4 className="text-xl font-orbitron text-[#FF1E1E] mb-3">Skill Matrix</h4>
                 {[
                   { name: "React", value: 90 },
                   { name: "Next.js", value: 85 },
@@ -162,14 +166,14 @@ export default function CrewSection() {
                           initial={{ width: 0 }}
                           animate={{ width: `${skill.value}%` }}
                           transition={{ duration: 1.5, delay: i * 0.2 }}
-                          className="h-1 bg-red-500"
+                          className="h-1 bg-[#FF1E1E]"
                         />
                       </div>
                     </div>
                   </div>
                 ))}
 
-                <h4 className="text-xl font-orbitron text-red-400 mt-8 mb-2">Metrics</h4>
+                <h4 className="text-xl font-orbitron text-[#FF1E1E] mt-8 mb-2">Metrics</h4>
                 <div className="gap-y-3 grid text-sm text-gray-300 uppercase">
                   <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="col-span-2">Missions Completed</span> <span className="">182</span> </p>
                   <p className="grid grid-cols-3 relative"><span className="absolute h-[1px] w-full bg-gray-500 -top-2 opacity-30"></span><span className="col-span-2">Efficiency Rating</span> <span className="">98%</span> </p>
@@ -181,6 +185,7 @@ export default function CrewSection() {
           </motion.div>
         )}
       </AnimatePresence>
+      <div className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-[#C1440E]/20 to-transparent" />
     </section>
   )
 }
